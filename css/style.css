@@ -91,6 +91,24 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.btn:link {
+  transition: all 0.2s; }
+
+.btn:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.6)); }
+  .btn:hover img::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn--animated {
+  animation: moveInButton 0.9s ease-out 2s;
+  animation-fill-mode: backwards; }
+
+img {
+  width: 7%;
+  padding-right: 1rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

@@ -1,0 +1,25 @@
+.btn {  
+  &:link {
+    transition: all 0.2s;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 1rem 2rem rgba($color-black, 0.6));
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &--animated {
+    animation: moveInButton 0.9s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+}
+
+img {
+  width: 7%;
+  padding-right: 1rem; 
+}
